@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>function</h1>
+    <h2>Creer un mot de passe avec une condition avec if else</h2>
+    <pre>
+    
+    // Demande à l'utilisateur de saisir un mot de passe ;
+    // compare ce dernier à une chaîne de caractères choisie (par exemple "secret").
+    // Si les mots de passe correspondent: affiche "Welcome! 👋" dans la console ;
+    // Sinon, affiche "Wrong password! ❌".
+     <br>
+            const userName = prompt("Veuillez entrer ton nom")
+            
+            if (userName === "thanksgod") {
+            console.log("Welcome! 👋");
+            
+            } else {
+            console.log("Wrong passWord");
+            }
+        </pre>
+
+    <h2>Creer un mot de passe avec une condition avec if else if</h2>
+    <pre>
+        // On demande à l'utilisateur d'entrer son nom et on verifie avec plusieurs <br> noms dans la bases de données
+        
+        //je recupere tout ce que l'utilisateur va taper dans une variable
+        const userName = prompt("Veuillez entrer ton nom")
+        // je compare ensuite celui ci avec differentes conditions ci dessus
+        
+        // si ce que l'utilsateur a tapé est egale a Bob, tu affiche Welcome Bob sinon tu passe à la suivante
+        if (userName ==="Bob") {alert("Welcome" + " " + userName);} 
+        // si le nom stocké dans la variable est egale Richard affiche "Welcome Richard"
+        else if(userName === "Richard"){alert("Welcome" + " " + userName);}
+        else if(userName === "Job"){alert("Welcome" + " " +  userName);}
+        else {alert("your are an stranger");}
+        
+    </pre>
+
+    <h2>Creer un mot de passe avec une condition avec if else if</h2>
+    <pre>
+        // Déclare et définis trois variables à l'aide d'une valeur numérique.
+        // (ex : const a = 1)
+        
+        // Si les trois variables sont égales, affiche "Les trois variables sont identiques" dans la console
+        // Si seulement deux des variables sont égales, affiche "Deux des variables sont identiques" dans la console
+        // Si les variables sont toutes différentes, affiche "toutes les variables sont différentes" dans la console
+        
+        const a = 1;
+        const b = 2;
+        const c = 2;
+        if (a ===b && a === c && b === c) {onsole.log("Les trois variables sont identiques");} 
+        else if (a ===b || a === c ||b === c){console.log("Deux des variables sont dentiques");}
+        else {console.log("toutes les variables sont différentes");}
+        
+    </pre>
+    <h2>function</h2>
+    <section>
+    <pre class="function">
+      
+        function sayHello(firstName, lastName, age) {
+            console.log(`Hello ${firstName} ${lastName} Your age is ${age} ans`);
+          }
+          sayHello("Luc", "MARC", 40)
+          sayHello("Jean", "KONAN", 28);
+          console.log("-----------------------")
+          let firstName = "Jean";
+          let lastName = "KONAN";
+          let age = 28
+          console.log(`Hello ${firstName} ${lastName} Your age is ${age} ans`);
+          let firstNameA = "Luc";
+          let lastNameA = "MARC";
+          let ageA = 40
+          console.log(`Hello ${firstNameA} ${lastNameA} Your age is ${ageA} ans`)
+          
+          // -----------------------------
+          function sum(a, b) {
+            return a + b;
+          }
+          const resultat = sum(1, 2)
+          console.log(resultat)
+    </pre>
+    <img src="./images/function js.JPG" alt="">
+   </section>
+   <h2>Creation de verificateur de mot de passe avec une fonction et une condition</h2>
+   <pre>
+    function login(nameUser,passWord)
+  {
+    if(nameUser==="bob" &&passWord==="secret")
+    {return true}
+    else{return false}
+  }
+let nameEnter = prompt("Veuillez entrer ton nom")
+let mdpEnter = prompt("entrer vot mot de passe")
+if(login(nameEnter,mdpEnter)){ console.log("Welcome!");}
+else{console.log("Wrong credentials...");}
+
+// Dans ce code, tu vois une fonction login qui accepte deux paramètres : name (l'identifiant de l'utilisateur) et password (son mot de passe).
+// Cette fonction va retourner true ou bien false selon la validité des informations de connexion fournies en paramètres.
+
+// Pour tester la fonction, tu vois 2 variables userName et userPassword qui seront initialisées par l'utilisateur, via prompt.
+
+// Le code vérifie ensuite si la valeur de retour de la fonction login appelée avec les arguments userName et userPassword est true.
+// Si c'est le cas, on affiche "Welcome !", sinon on affiche "Wrong credentials...".
+
+//sans fonction
+let nameEnter = prompt("Veuillez entrer ton nom")
+let mdpEnter = prompt("entrer vot mot de passe")
+if(nameEnter==="bob" && mdpEnter==="secret"){ console.log("Welcome!");}
+else
+{	console.log("Wrong credentials...");}
+   </pre>
+
+</div>   
+
+
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
